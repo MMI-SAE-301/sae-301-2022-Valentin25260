@@ -1,7 +1,35 @@
+<script setup lang="ts">
+import MontreProfil from "../components/MontreProfil.vue";
+import type { Montre } from "../types";
+
+
+const exemples: Montre = [{
+  cadran: "#FF0000",
+  ecran: "#FF0000",
+  bracelet: "#FF0000",
+  bracelet_bas: "#FF0000",
+  bracelet_haut: "#FF0000",
+},
+{
+  cadran: "#FF0600",
+  ecran: "#FF0500",
+  bracelet: "#FF4000",
+  bracelet_bas: "#FF0500",
+  bracelet_haut: "#FF0700",
+}];
+</script>
+
 <template>
   <section>
-    <h1 class="text-2xl">
-      Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
-    </h1>
+    <h1 class="text-2xl">Exemples de Baskets.</h1>
+    <div class="flex flex-wrap gap-2">
+      <div class="w-64">
+        <LoginLogout />
+
+        <MontreProfil class="w-64" />
+
+      </div>
+      <ListeBaskets />
+    </div>
   </section>
 </template>
