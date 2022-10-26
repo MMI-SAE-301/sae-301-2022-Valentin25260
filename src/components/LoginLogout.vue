@@ -12,8 +12,8 @@ async function loginF() {
 }
 </script>
 <template>
-    <div class="col-span-2 col-start-5 mt-36">
+    <div class="mt-36 flex items-center justify-center gap-12">
         <LoginButton :logo="'public/Google.png'" :name="'Google'" @click="loginG" />
-        <LoginButton :logo="'public/facebook.png'" :name="'Facebook'" @click="loginF" class="mt-9" />
+        <LoginButton :logo="'public/facebook.png'" :name="'Facebook'" @click="loginF" />
     </div>
 </template>  
