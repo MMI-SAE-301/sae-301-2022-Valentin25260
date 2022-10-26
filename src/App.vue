@@ -35,10 +35,39 @@
       </div>
     </nav>
   </div>
+
+
   <Suspense>
     <router-view class="" />
   </Suspense>
+
+  <footer class="text-black" style="background-color: #f1f1f1;">
+    <div class="container pt-9 mt-40 ml-10 ">
+      <div class="flex justify-between  mb-9">
+        <div class="">
+          <a href="/">
+            <router-link to="/">
+              <img src="../public/logo.png" alt="logo" class="w-40">
+            </router-link>
+          </a>
+        </div>
+        <div class="flex gap-5 mt-3">
+          <p>ACCUEIL</p>
+          <p>VOS MEDELES</p>
+          <p>PERSONNALISATION</p>
+          <p>COMPTE</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-gray-700 p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+      SAE 301
+      <a class="text-gray-800" href="https://tailwind-elements.com/">Tholomier Valentin</a>
+    </div>
+  </footer>
 </template>
+
+
 
 
 
