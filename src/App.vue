@@ -1,30 +1,46 @@
 <template>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="Login">
-          lien vers
-          <code class="font-mono">LOGIN</code>
-        </router-link>
-      </li>
-    </ul>
-  </nav>
+  <div class="">
+    <nav class="shadow-xl">
+      <div class="relative bg-noirfond">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="flex items-center justify-between  py-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <a href="/">
+                <router-link to="/">
+                  <img src="public/logo.png" alt="logo" class="w-40">
+                </router-link>
+              </a>
+            </div>
+            <div class="-my-2 -mr-2 md:hidden">
+              <button type="button"
+                class="inline-flex items-center justify-center rounded-md bg-grey p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                aria-expanded="false">
+                <span class="sr-only">Open menu</span>
+                <!-- Heroicon name: outline/bars-3 -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <nav class="hidden space-x-20 md:flex">
 
-  <!-- Affiche les pages -->
+              <a href="persona" class="text-2xl font-Rubik">Personnaliser</a>
+              <a href="modele" class="text-2xl font-Rubik">Vos modèles</a>
+              <a href="Login" class="text-2xl font-Rubik">Compte</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view class="" />
   </Suspense>
 </template>
+
+
 
 <script setup lang="ts">
 import { Bars3Icon } from "@heroicons/vue/20/solid";
