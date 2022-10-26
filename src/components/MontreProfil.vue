@@ -4,7 +4,6 @@ withDefaults(defineProps<Montre>(), {
     cadran: "white",
     ecran: "white",
     bracelet: "white",
-
 })
 </script>
 
