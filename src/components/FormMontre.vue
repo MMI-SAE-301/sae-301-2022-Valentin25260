@@ -33,7 +33,7 @@ async function upsertMontre(dataForm, node) {
 </script>
 
 <template>
-    <div class="p-2">
+    <div class="p-2 flex">
         <ul class="flex gap-1">
             <li><a href="#profil">Profil</a></li>
         </ul>

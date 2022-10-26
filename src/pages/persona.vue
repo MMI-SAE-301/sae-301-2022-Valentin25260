@@ -20,14 +20,10 @@ const exemples: Montre[] = [{
 <template>
     <section>
         <h1 class="text-2xl">Exemples de montres.</h1>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex gap-2">
             <div class="w-64">
                 <LoginLogout />
-
                 <FormMontre />
-
-
-
             </div>
             <ListeBaskets />
         </div>
