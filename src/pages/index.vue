@@ -30,12 +30,12 @@ import Boutton from "@/components/boutton.vue";
     <img src="../../public/montrenoir.png" alt="montre noir" class="mt-32">
   </div>
 
-  <div class="grid grid-cols-5 w-full ">
-    <img src="../../public/montrebleu.png" alt="montre bleu" class="mt-32 flex-auto ">
-    <img src="../../public/montrejaune.png" alt="montre jaune" class="mt-32 flex-auto ">
-    <img src="../../public/montreviolette.png" alt="montre violette" class="mt-32 flex-auto ">
-    <img src="../../public/montreverte.png" alt="montre verte" class="mt-32 flex-auto ">
-    <img src="../../public/montreorange.png" alt="montre orange" class="mt-32 flex-auto ">
+  <div class="grid grid-cols-5 ">
+    <img src="../../public/montrebleu.png" alt="montre bleu" class="mt-32 flex-auto w-full ">
+    <img src="../../public/montrejaune.png" alt="montre jaune" class="mt-32 flex-auto w-full ">
+    <img src="../../public/montreviolette.png" alt="montre violette" class="mt-32 flex-auto w-full ">
+    <img src="../../public/montreverte.png" alt="montre verte" class="mt-32 flex-auto w-full ">
+    <img src="../../public/montreorange.png" alt="montre orange" class="mt-32 flex-auto w-full ">
   </div>
 
 
@@ -60,7 +60,7 @@ import Boutton from "@/components/boutton.vue";
     </div>
   </div>
 
-  
+
 
 
 </template>
