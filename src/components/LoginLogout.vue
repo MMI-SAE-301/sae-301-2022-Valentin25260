@@ -13,7 +13,7 @@ async function loginF() {
 </script>
 <template>
     <div class="mt-36 flex items-center justify-center gap-12">
-        <LoginButton :logo="'public/Google.png'" :name="'Google'" @click="loginG" />
-        <LoginButton :logo="'public/facebook.png'" :name="'Facebook'" @click="loginF" />
+        <LoginButton :logo="'public/images/Google.png'" :name="'Google'" @click="loginG" />
+        <LoginButton :logo="'public/images/facebook.png'" :name="'Facebook'" @click="loginF" />
     </div>
-</template>  
+</template>
