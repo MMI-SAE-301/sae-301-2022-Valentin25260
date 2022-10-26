@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <header>
     <nav class="shadow-xl">
       <div class="relative bg-noirfond">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
@@ -7,7 +7,7 @@
             <div class="flex justify-start lg:w-0 lg:flex-1">
               <a href="/">
                 <router-link to="/">
-                  <img src="../public/logo.png" alt="logo" class="w-40">
+                  <img src="../public/images/logo.png" alt="logo" class="w-40">
                 </router-link>
               </a>
             </div>
@@ -25,52 +25,48 @@
               </button>
             </div>
             <nav class="hidden space-x-20 md:flex">
-
-              <a href="persona" class="text-2xl font-Rubik">Personnaliser</a>
-              <a href="modele" class="text-2xl font-Rubik">Vos modèles</a>
-              <a href="Login" class="text-2xl font-Rubik">Compte</a>
+              <router-link to="/personaliser">
+                <a class="text-2xl font-Rubik">Personnaliser</a>
+              </router-link>
+              <router-link to="/modele">
+                <a class="text-2xl font-Rubik">Vos modèles</a>
+              </router-link>
+              <router-link to="/login">
+                <a class="text-2xl font-Rubik">Compte</a>
+              </router-link>
             </nav>
           </div>
         </div>
       </div>
     </nav>
-  </div>
-
+  </header>
 
   <Suspense>
     <router-view class="" />
   </Suspense>
 
-  <footer class="text-black" style="background-color: #f1f1f1;">
+  <footer class="text-black">
     <div class="container pt-9 mt-40 ml-10 ">
       <div class="flex justify-between  mb-9">
         <div class="">
           <a href="/">
             <router-link to="/">
-              <img src="../public/logo.png" alt="logo" class="w-40">
+              <img src="../public/images/logo.png" alt="logo" class="w-40">
             </router-link>
           </a>
         </div>
         <div class="flex gap-10 mt-3">
-          <p>ACCUEIL</p>
-          <p>VOS MEDELES</p>
-          <p>PERSONNALISATION</p>
-          <p>COMPTE</p>
+          <p><a href="/">ACCUEIL</a></p>
+          <p><a href="/modele">VOS MODELES</a></p>
+          <p><a href="/personaliser">PERSONNALISATION</a></p>
+          <p><a href="/login">PERSONNALISATION</a></p>
         </div>
       </div>
     </div>
 
-    <div class="text-center text-gray-700 p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center text-gray-700 p-2" id="copyright">
       SAE 301
       <a class="text-gray-800" href="https://tailwind-elements.com/">Tholomier Valentin</a>
     </div>
   </footer>
 </template>
-
-
-
-
-
-<script setup lang="ts">
-import { Bars3Icon } from "@heroicons/vue/20/solid";
-</script>
