@@ -51,7 +51,7 @@
             </router-link>
           </a>
         </div>
-        <div class="flex gap-5 mt-3">
+        <div class="flex gap-10 mt-3">
           <p>ACCUEIL</p>
           <p>VOS MEDELES</p>
           <p>PERSONNALISATION</p>
