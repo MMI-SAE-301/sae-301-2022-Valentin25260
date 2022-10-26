@@ -19,7 +19,7 @@ if (props.id) {
         console.log("n'a pas pu charger la table Montre :", error);
     else montre.value = data[0];
 }
-
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
     const { data, error } = await supabase.from("montre").upsert(dataForm);
     if (error) node.setErrors([error.message]);

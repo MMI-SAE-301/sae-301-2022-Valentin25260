@@ -1,23 +1,20 @@
 <script setup lang="ts">
 import MontreProfil from "../components/MontreProfil.vue";
-import FormMontre from "../components/FormMontre.vue";
-
 import type { Montre } from "../types";
-
+import FormMontre from "../components/FormMontre.vue";
+import ListeMontre from "../components/ListeMontre.vue";
 
 const exemples: Montre = [{
   cadran: "#FF0000",
   ecran: "#FF0000",
   bracelet: "#FF0000",
-  bracelet_bas: "#FF0000",
-  bracelet_haut: "#FF0000",
+
 },
 {
   cadran: "#FF0600",
   ecran: "#FF0500",
   bracelet: "#FF4000",
-  bracelet_bas: "#FF0500",
-  bracelet_haut: "#FF0700",
+
 }];
 </script>
 
@@ -28,12 +25,13 @@ const exemples: Montre = [{
       <div class="w-64">
         <LoginLogout />
 
-        <FormMontre/>
+        <FormMontre />
 
-        
+
 
       </div>
       <ListeBaskets />
     </div>
   </section>
 </template>
+
