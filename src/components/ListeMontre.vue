@@ -4,7 +4,7 @@ import MontreProfil from "./MontreProfil.vue";
 const props = defineProps<{
     max?: number;
 }>();
-let { data: Montre, error } = await supabase
+let { data: Montres, error } = await supabase
     .from("montre")
     .select("*")
     .limit(props.max ?? 100)
@@ -16,7 +16,7 @@ if (error) {
 <template>
     <div class="">
         <ul>
-            <li v-for="montre in Montre" :key="montre.id_montre" style="float:right; width:200px;">
+            <li v-for="montre in Montres" :key="montre.id_montre" style="float:right; width:200px;">
                 <router-link :to="{ name: 'montre-edit-id', params: { id: montre.montre_id } }">
                     <MontreProfil class="w-64" v-bind="montre" />
                 </router-link>
