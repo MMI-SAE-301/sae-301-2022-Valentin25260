@@ -7,7 +7,7 @@
             <div class="flex justify-start lg:w-0 lg:flex-1">
               <a href="/">
                 <router-link to="/">
-                  <img src="public/logo.png" alt="logo" class="w-40">
+                  <img src="../public/logo.png" alt="logo" class="w-40">
                 </router-link>
               </a>
             </div>

@@ -4,11 +4,10 @@ import type { Montre } from "../types";
 import FormMontre from "../components/FormMontre.vue";
 import ListeMontre from "../components/ListeMontre.vue";
 
-const exemples: Montre = [{
+const exemples: Montre[] = [{
     cadran: "#FF0000",
     ecran: "#FF0000",
     bracelet: "#FF0000",
-
 },
 {
     cadran: "#FF0600",
