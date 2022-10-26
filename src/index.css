@@ -3,6 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Neutral Face";
-    src: url("../public/fonts/ADELIA.otf");
+    font-family: "NeutralFace";
+    src: url("../public/fonts/NeutralFace-Bold.otf");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik.ttf");
+}
+
+h1,
+h2 {
+    font-family: 'NeutralFace';
+}
+
+.font-Rubik {
+    font-family: 'Rubik';
+}
+
+footer {
+    background-color: #f1f1f1;
+}
+
+footer #copyright {
+    background-color: rgba(0, 0, 0, 0.2)
 }
