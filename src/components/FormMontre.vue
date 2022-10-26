@@ -33,10 +33,8 @@ async function upsertMontre(dataForm, node) {
 </script>
 
 <template>
-    <div class="p-2 flex">
-        <ul class="flex gap-1">
-            <li><a href="#profil">Profil</a></li>
-        </ul>
+    <div class="gap-40 justify-center mt-40 ">
+
         <div class="carousel w-64">
             <SvgProfil class="carousel-item w-64" v-bind="montre" id="profil" />
         </div>
