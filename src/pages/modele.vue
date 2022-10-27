@@ -18,13 +18,13 @@ const exemples: Montre[] = [{
 <template>
     <section>
         <div class="flex">
-            <h1 class="text-4xl font-medium mt-12 ml-96">
+            <h1 class="text-4xl font-medium mt-32 ml-96">
                 VOS<br>
                 MODELES
             </h1>
         </div>
 
-        <div class=" flex gap-40 justify-center mt-30 ">
+        <div class=" flex gap-40 justify-center mt-30">
             <div class="w-64">
                 <ListeMontre />
             </div>

@@ -30,6 +30,23 @@ async function upsertMontre(dataForm, node) {
         router.push({ name: "montre-edit-id", params: { id: data[0].montre_id } });
     }
 }
+
+async function supprimerMontre() {
+    const { data, error } = await supabase
+        .from("montre")
+        .delete()
+        .match({ montre_id: montre.value.montre_id });
+    if (error) {
+        console.error(
+            "Erreur à la suppression de ",
+            montre.value,
+            "erreur :",
+            error
+        );
+    } else {
+        router.push("/modele");
+    }
+}
 </script>
 
 <template>
@@ -59,6 +76,8 @@ async function upsertMontre(dataForm, node) {
                     <Boutton name="MES MODELES" />
                     <Boutton name="ENREGISTRER" />
                     <Boutton name="COMMANDER" />
+                    <Boutton name="SUPPRIMER" @click="supprimerMontre()">
+                    </Boutton>
                 </div>
             </FormKit>
         </div>
