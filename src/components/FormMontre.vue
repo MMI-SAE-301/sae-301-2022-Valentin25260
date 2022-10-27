@@ -47,6 +47,16 @@ async function supprimerMontre() {
         router.push("/modele");
     }
 }
+
+const { data: listeMateriaux, error } = await supabase
+    .from("materiaux")
+    .select("*");
+if (error) console.log("n'a pas pu charger la table Materiaux :", error);
+// Les convertir par `map` en un tableau d'objets {value, label} pour FormKit
+const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
+    value: materiaux.materiaux_id,
+    label: materiaux.materiaux_libelle,
+}));
 </script>
 
 <template>
@@ -71,6 +81,10 @@ async function supprimerMontre() {
                 <FormKitListColors name="cadran" label="cadran" />
                 <FormKitListColors name="bracelet" label="bracelet" />
                 <FormKitListColors name="ecran" label="ecran" />
+                <FormKit type="select" name="materiaux_cadran" label="Matériaux Cadran" :options="optionsMateriaux" />
+                <FormKit type="select" name="materiaux_bracelet" label="Matériaux Bracelet"
+                    :options="optionsMateriaux" />
+
 
                 <div class="flex justify-center items-center relative gap-2.5  mt-10 w-80">
                     <Boutton name="MES MODELES" />
