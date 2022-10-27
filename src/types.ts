@@ -2,6 +2,7 @@ export interface Montre {
     cadran?: string;
     ecran?: string;
     bracelet?: string;
+    montre_id?: string;
 }
 
 export const colors = {
