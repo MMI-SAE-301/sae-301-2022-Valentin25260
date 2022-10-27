@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="shadow-xl">
+    <nav class="shadow-xl dark:bg-black">
       <div class="relative bg-noirfond">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <div class="flex items-center justify-between  py-6 md:justify-start md:space-x-10">
@@ -24,7 +24,7 @@
                 </svg>
               </button>
             </div>
-            <nav class="hidden space-x-20 md:flex">
+            <nav class="hidden space-x-20 md:flex dark:text-white">
               <router-link to="/personaliser">
                 <a class="text-2xl font-Rubik">Personnaliser</a>
               </router-link>
@@ -45,7 +45,7 @@
     <router-view class="" />
   </Suspense>
 
-  <footer class="text-black">
+  <footer class="text-black dark:bg-black">
     <div class="container pt-9 mt-40 ml-10 ">
       <div class="flex justify-between  mb-9">
         <div class="">
@@ -55,7 +55,7 @@
             </router-link>
           </a>
         </div>
-        <div class="flex gap-10 mt-3">
+        <div class="flex gap-10 mt-3 dark:text-white">
           <p><a href="/">ACCUEIL</a></p>
           <p><a href="/modele">VOS MODELES</a></p>
           <p><a href="/personaliser">PERSONNALISATION</a></p>
@@ -66,7 +66,7 @@
 
     <div class="text-center text-gray-700 p-2" id="copyright">
       SAE 301
-      <a class="text-gray-800" href="https://tailwind-elements.com/">Tholomier Valentin</a>
+      <a class="text-gray-800 dark:text-white" href="https://tailwind-elements.com/">Tholomier Valentin</a>
     </div>
   </footer>
 </template>

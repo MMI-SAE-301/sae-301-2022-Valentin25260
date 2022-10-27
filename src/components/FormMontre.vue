@@ -75,8 +75,8 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
         </div>
         <div class="mt-72">
             <FormKit type="form" v-model="montre" @submit="upsertMontre">
-                <h2 class="text-blue-400 mb-4">TIK-TAK V1</h2>
-                <h2 class="mb-4">199 € SEULEMENT 24H</h2>
+                <h2 class="text-blue-400 mb-4 dark:text-white">TIK-TAK V1</h2>
+                <h2 class="mb-4 dark:text-white">199 € SEULEMENT 24H</h2>
 
                 <FormKitListColors name="cadran" label="cadran" />
                 <FormKitListColors name="bracelet" label="bracelet" />

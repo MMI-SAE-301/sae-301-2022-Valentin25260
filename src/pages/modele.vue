@@ -16,20 +16,22 @@ const exemples: Montre[] = [{
 </script>
 
 <template>
-    <section>
+    <main class="dark:bg-black">
+        <section>
 
-        <div class="flex">
-            <h1 class="text-4xl font-medium mt-32 ml-96">
-                VOS<br>
-                MODELES
-            </h1>
-        </div>
-
-        <div class="justify-center mt-40 flex gap-40">
-            <div>
-                <ListeMontre class="w-full" />
+            <div class="flex">
+                <h1 class="text-4xl font-medium mt-32 ml-96 dark:text-white">
+                    VOS<br>
+                    MODELES
+                </h1>
             </div>
-        </div>
 
-    </section>
+            <div class="justify-center mt-40 flex gap-40">
+                <div>
+                    <ListeMontre class="w-full" />
+                </div>
+            </div>
+
+        </section>
+    </main>
 </template>

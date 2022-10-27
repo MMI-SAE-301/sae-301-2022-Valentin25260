@@ -16,7 +16,9 @@ const exemples: Montre[] = [{
 </script>
 
 <template>
-    <section>
-        <FormMontre />
-    </section>
+    <main class="dark:bg-black">
+        <section>
+            <FormMontre />
+        </section>
+    </main>
 </template>
