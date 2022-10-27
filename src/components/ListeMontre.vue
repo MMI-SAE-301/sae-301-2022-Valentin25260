@@ -15,10 +15,10 @@ if (error) {
 
 <template>
     <div class="">
-        <ul>
+        <ul class="grid grid-cols-2 gap-20">
             <li v-for="montre in Montres" :key="montre.id_montre">
                 <router-link :to="{ name: 'montre-edit-id', params: { id: montre.montre_id } }">
-                    <MontreProfil class="w-64" v-bind="montre" />
+                    <MontreProfil class="w-64 " v-bind="montre" />
                 </router-link>
             </li>
         </ul>

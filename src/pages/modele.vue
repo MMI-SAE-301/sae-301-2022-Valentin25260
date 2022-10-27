@@ -17,6 +17,7 @@ const exemples: Montre[] = [{
 
 <template>
     <section>
+
         <div class="flex">
             <h1 class="text-4xl font-medium mt-32 ml-96">
                 VOS<br>
@@ -24,10 +25,11 @@ const exemples: Montre[] = [{
             </h1>
         </div>
 
-        <div class=" flex gap-40 justify-center mt-30">
-            <div class="w-64">
-                <ListeMontre />
+        <div class="justify-center mt-40 flex gap-40">
+            <div>
+                <ListeMontre class="w-full" />
             </div>
         </div>
+
     </section>
 </template>
