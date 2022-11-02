@@ -3,7 +3,7 @@
 - **Nom : Tholomier**
 - **Prénom : Valentin**
 - **URL maquette Figma: https://www.figma.com/file/amv085LyF4lnxbxmsxd5Wx/SAE-301---THOLOMIER?node-id=0%3A1**
-- **URL publique du site : https://app.netlify.com/sites/sae-301-tholomier/settings/general**
+- **URL publique du site : https://sae-301-tholomier.netlify.app/ **
 - **URL projet Supabase : https://cxqnornqplmiuoawybgt.supabase.co**
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
